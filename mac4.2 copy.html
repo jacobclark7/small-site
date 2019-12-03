@@ -1,0 +1,55 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="css/stylesheet.css" rel="stylesheet">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+    <div class="mac">
+        <div class="topnav3">
+  <a href="macmillerpg2.html">Biography</a>
+  <a href="mac_page3.html">Discography</a>
+  <a href="mac4.2%20copy.html">Slide Show</a>
+</div>
+        
+        <div class="gallery">
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="gettyimages-453997629-2048x2048.jpg" style="width:100%">
+  <img class="mySlides" src="1*pII4EYHO7sG6u9Y2mv9HRA.jpg" style="width:100%">
+  <img class="mySlides" src="gettyimages-814625356-2048x2048.jpg" style="width:100%">
+  <img class="mySlides" src="mac2-1.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+
+</div>
+    </div>
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+    
+    
+    
+    </body>
+      
+</html>
